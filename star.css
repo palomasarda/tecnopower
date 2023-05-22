@@ -1,0 +1,187 @@
+body{
+    text-align: center;
+    padding: 20px;
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    }
+    .boton {
+        width: 130px;
+        height: 40px;
+        color: black;
+        text-decoration: none;
+        border-radius: 5px;
+        padding: 10px 25px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 500;
+        background: transparent;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+         box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+         7px 7px 20px 0px rgba(0,0,0,.1),
+         4px 4px 5px 0px rgba(0,0,0,.1);
+        outline: none;
+      }
+    .Ms {
+        background-color: yellow;
+      background-image: linear-gradient(315deg, rgb(245, 245, 30) 0%, rgb(253, 253, 13) 74%);
+        border: none;
+        z-index: 1;
+      }
+      .Ms:after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        border-radius: 5px;
+         background-color: yellow;
+      background-image: linear-gradient(315deg, blue 0%, rgb(35, 35, 223) 74%);
+        box-shadow:
+         -7px -7px 20px 0px #fff9,
+         -4px -4px 5px 0px #fff9,
+         7px 7px 20px 0px #0002,
+         4px 4px 5px 0px #0001;
+        transition: all 0.3s ease;
+      }
+      .Ms:hover {
+        color: #fff;
+      }
+      .Ms:hover:after {
+        top: 0;
+        height: 100%;
+      }
+      .Ms:active {
+        top: 2px;
+      }
+
+      .man {
+        background-color: blue;
+        color: white;
+      background-image: linear-gradient(315deg, rgb(4, 33, 197) (245, 245, 30) 0%, rgb(14, 14, 233) (253, 253, 13) 74%);
+        border: none;
+        z-index: 1;
+      }
+      .man:after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        border-radius: 5px;
+         background-color: yellow;
+      background-image: linear-gradient(315deg, yellow 0%, rgb(224, 224, 16) (35, 35, 223) 74%);
+        box-shadow:
+         -7px -7px 20px 0px #fff9,
+         -4px -4px 5px 0px #fff9,
+         7px 7px 20px 0px #0002,
+         4px 4px 5px 0px #0001;
+        transition: all 0.3s ease;
+      }
+      .man:hover {
+        color: black;
+      }
+      .man:hover:after {
+        top: 0;
+        height: 100%;
+      }
+      .man:active {
+        top: 2px;
+      }
+ .music{
+    width: 50px;
+    height: 20px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+ }
+
+ .music2{
+    position: relative;
+    right: 20px;
+    bottom: 20px;
+    border:none;
+    box-shadow: none;
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    -webkit-perspective: 230px;
+    perspective: 230px;
+  }
+  .music2 span {
+    background: rgb(238, 0, 0);
+  background: linear-gradient(0deg, rgb(238, 0, 0) 0%, rgb(251, 2, 2) 100%);
+    display: block;
+    position: absolute;
+    width: 130px;
+    height: 40px;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    border-radius: 5px;
+    margin:0;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+  .music2 span:nth-child(1) {
+    box-shadow:
+     -7px -7px 20px 0px #fff9,
+     -4px -4px 5px 0px #fff9,
+     7px 7px 20px 0px #0002,
+     4px 4px 5px 0px #0001;
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+    -webkit-transform-origin: 50% 50% -20px;
+    -moz-transform-origin: 50% 50% -20px;
+    transform-origin: 50% 50% -20px;
+  }
+  .music2 span:nth-child(2) {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: 50% 50% -20px;
+    -moz-transform-origin: 50% 50% -20px;
+    transform-origin: 50% 50% -20px;
+  }
+  .music2:hover span:nth-child(1) {
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+  }
+  .music2:hover span:nth-child(2) {
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+   color: transparent;
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+  }
