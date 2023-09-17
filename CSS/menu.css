@@ -1,0 +1,128 @@
+body{
+  background-color:black;
+text-align: center;
+margin: 0;
+padding: 0;
+  
+}
+
+.navbar-nav .nav-link {
+    margin-right: 10px;
+    font-family: 'Press Start 2P', cursive;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+.conp{
+    width: 210px;
+    height: 30px;
+    padding: 10px 25px;
+    font-weight: 300;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;    
+}  
+
+  .conp:before {
+    height: 0%;
+    width: 2px;
+  }
+
+  a{
+    color: #fff;
+  }
+  .conp:hover{
+      color: #f1ed05;
+  }
+ 
+
+  .per{
+    width: 300px;
+    height: 40px;
+  }
+#imagen{
+    background-image: url(../img/WhatsApp\ Image\ 2023-07-28\ at\ 6.44.47\ PM.jpeg);
+    display: inline-block;
+    position: center;
+}
+    
+.controls { 
+    position: absolute;
+    top: 120px;
+    background-position-x:-50px;
+    left: 1200px;
+    
+}
+
+.movement-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #0707d0; /* Cambia esto al color que desees para los botones */
+    color: rgb(250, 244, 244);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#up-button {
+    order: -1;
+}
+
+#down-button {
+    order: 2;
+}
+
+#left-button {
+    margin-right: 10px;
+}
+
+#right-button {
+    order: 1;
+}
+
+.movement-button:hover {
+    background-color: #f1ed05; /* Cambia esto al color de resalte que desees */
+}
+
+.fila {
+  position: relative;
+  height: 120px; /* Ajusta la altura según tus necesidades */
+  overflow: hidden;
+}
+
+.imagen {
+  position: absolute;
+  top: 0;
+  animation-duration: 5s; /* Ajusta la duración de la animación según tus necesidades */
+  animation-timing-function: linear;
+  animation-iteration-count: infinite; /* Hace que la animación se repita infinitamente */
+}
+
+.fila.izquierda .imagen {
+  left: -100%;
+  animation-name: slideRight;
+}
+
+.fila.derecha .imagen {
+  right: -100%;
+  animation-name: slideLeft;
+}
+
+@keyframes slideRight {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    right: -100%;
+  }
+  100% {
+    right: 100%;
+  }
+}

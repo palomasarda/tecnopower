@@ -1,0 +1,123 @@
+body{
+background-color: black;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+}
+h2{
+    padding: 20px;
+    width: 10%;
+    margin-left: 0%;
+    border-radius: 50px;
+}
+.navbar-nav .nav-link {
+    margin-right: 10px;
+    background-color: bl;
+    font-family: 'Press Start 2P', cursive;
+  }
+
+.conp{
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;    
+}  
+.conp {
+    background: rgb(96,9,240);
+    background: linear-gradient(0deg, rgba(96,9,240,1) 0%, rgba(129,5,240,1) 100%);
+    border: none;
+    
+  }
+  .conp:before {
+    height: 0%;
+    width: 2px;
+  }
+  .conp:hover {
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+                -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.2),
+      inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+  }
+
+  .per{
+    width: 230px;
+    height: 40px;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(56, 8px); /* Ancho del tablero (56 columnas de 8px cada una) */
+    grid-template-rows: repeat(68, 8px); /* Altura del tablero (68 filas de 8px cada una) */
+    gap: 1px; /* Espacio entre las celdas */
+    background-color: #000;
+    border: 4px solid #fff;
+    width: 449px; /* Ancho del tablero */
+    height: 542px; /* Altura del tablero */
+  }
+  
+  /* Estilos para las celdas del tablero */
+  .board div {
+    width: 8px;
+    height: 8px;
+    background-color: red;
+  }
+  
+  /* Estilos para las celdas de Pac-Man (agregando una clase "pac-dot") */
+  .board .pac-dot {
+    background-color: #fff;
+    border-radius: 50%;
+  }
+    
+.controls { 
+    position: absolute;
+
+    top: 120px;
+    background-position-x:-50px;
+    left: 1200px;
+    
+}
+
+.movement-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4CAF50; /* Cambia esto al color que desees para los botones */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#up-button {
+    order: -1;
+}
+
+#down-button {
+    order: 2;
+}
+
+#left-button {
+    margin-right: 10px;
+}
+
+#right-button {
+    order: 1;
+}
+
+.movement-button:hover {
+    background-color: #45a049; /* Cambia esto al color de resalte que desees */
+}

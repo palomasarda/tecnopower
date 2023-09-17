@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+  }
+  
+  .fila {
+    position: relative;
+    height: 200px; /* Ajusta la altura según tus necesidades */
+    overflow: hidden;
+  }
+  
+  .imagen {
+    position: absolute;
+    top: 0;
+    animation-duration: 5s; /* Ajusta la duración de la animación según tus necesidades */
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; /* Hace que la animación se repita infinitamente */
+  }
+  
+  .fila.izquierda .imagen {
+    left: -100%;
+    animation-name: slideRight;
+  }
+  
+  .fila.derecha .imagen {
+    right: -100%;
+    animation-name: slideLeft;
+  }
+  
+  @keyframes slideRight {
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+  
+  @keyframes slideLeft {
+    0% {
+      right: -100%;
+    }
+    100% {
+      right: 100%;
+    }
+  }
+  
